@@ -1,0 +1,813 @@
+﻿Log file open, 04/24/17 21:13:20
+LogInit:Display: Running engine for game: LaserPuzzle
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(2105208202) SRandInit(2105208203).
+LogTaskGraph: Started task graph with 5 named threads and 10 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.109936
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: D:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.25-01.13.21:185][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.25-01.13.21:185][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.25-01.13.21:206][  0]LogInit: Computer: SEAGULLDESKTOP
+[2017.04.25-01.13.21:206][  0]LogInit: User: Seagull
+[2017.04.25-01.13.21:206][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.04.25-01.13.21:206][  0]LogInit: High frequency timer resolution =3.319349 MHz
+[2017.04.25-01.13.21:206][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.04.25-01.13.21:206][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.25-01.13.21:206][  0]LogMemory: Process Physical Memory: 263.96 MB used, 263.96 MB peak
+[2017.04.25-01.13.21:206][  0]LogMemory: Process Virtual Memory: 270.14 MB used, 270.14 MB peak
+[2017.04.25-01.13.21:206][  0]LogMemory: Physical Memory: 7884.95 MB used,  24803.46 MB free, 32688.41 MB total
+[2017.04.25-01.13.21:206][  0]LogMemory: Virtual Memory: 654.55 MB used,  24803.46 MB free, 134217728.00 MB total
+[2017.04.25-01.13.21:417][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.25-01.13.23:086][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.25-01.13.23:739][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2017.04.25-01.13.23:739][  0]LogD3D11RHI:       8144/0/16344 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.04.25-01.13.23:741][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.25-01.13.23:741][  0]LogD3D11RHI:       0/0/16344 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.25-01.13.23:741][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.25-01.13.23:745][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.25-01.13.23:745][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.25-01.13.23:745][  0]LogWindows: EnumDisplayDevices:
+[2017.04.25-01.13.23:745][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2017.04.25-01.13.23:745][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.04.25-01.13.23:745][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.04.25-01.13.23:745][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.04.25-01.13.23:745][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.25-01.13.23:745][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2017.04.25-01.13.23:745][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.04.25-01.13.23:745][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.04.25-01.13.23:745][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.25-01.13.24:369][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.25-01.13.24:398][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.04.25-01.13.24:443][  0]LogShaderCompilers: Guid format shader working directory is 3 characters bigger than the processId version (../../../../../../LazerPuzzle_Game/GameFiles/Intermediate/Shaders/WorkingDirectory/14416/).
+[2017.04.25-01.13.24:443][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Seagull/AppData/Local/Temp/UnrealShaderWorkingDir/EF01A3EB4F347BA6C3C92EBF0C001F59/'.
+[2017.04.25-01.13.24:443][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.25-01.13.26:381][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.25-01.13.26:426][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.25-01.13.26:474][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.25-01.13.26:520][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.25-01.13.26:568][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.25-01.13.26:613][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.25-01.13.26:659][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.25-01.13.26:704][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.25-01.13.26:738][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.25-01.13.26:789][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.25-01.13.26:838][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.25-01.13.26:884][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.25-01.13.26:929][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.25-01.13.26:974][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.25-01.13.27:019][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.25-01.13.27:108][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.25-01.13.27:108][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.25-01.13.27:138][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.25-01.13.27:243][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.25-01.13.27:273][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.25-01.13.27:328][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.25-01.13.27:374][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.25-01.13.27:419][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.25-01.13.27:467][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.25-01.13.27:467][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.25-01.13.27:969][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache: Loaded boot cache 0.06s 52MB C:/Users/Seagull/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Seagull/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../LazerPuzzle_Game/GameFiles/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../LazerPuzzle_Game/GameFiles/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.25-01.13.28:027][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.25-01.13.28:049][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.25-01.13.28:061][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Seagull/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.25-01.13.28:071][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.25-01.13.28:082][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.25-01.13.28:082][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.25-01.13.29:994][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.25-01.13.29:997][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.25-01.13.30:200][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.25-01.13.30:232][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.25-01.13.30:269][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.25-01.13.30:269][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.25-01.13.30:269][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.25-01.13.31:072][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: laserpuzzle, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 640879885
+[2017.04.25-01.13.31:112][  0]LogAssetRegistry: FAssetRegistry took 0.0215 seconds to start up
+[2017.04.25-01.13.31:158][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.030971 seconds
+[2017.04.25-01.13.31:163][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.25-01.13.31:163][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.04.25-01.13.31:163][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.25-01.13.31:203][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.25-01.13.33:219][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.25-01.13.33:252][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.25-01.13.33:661][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.25-01.13.33:994][  0]SourceControl: Info Source control is disabled
+[2017.04.25-01.13.34:028][  0]SourceControl: Info Source control is disabled
+[2017.04.25-01.13.34:066][  0]SourceControl: Info Source control is disabled
+[2017.04.25-01.13.34:106][  0]SourceControl: Info Source control is disabled
+[2017.04.25-01.13.35:190][  0]LogEngine: Initializing Engine...
+[2017.04.25-01.13.35:727][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-C9D57CBE
+[2017.04.25-01.13.35:934][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.25-01.13.35:968][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.13.35:980][  0]LogInit: FAudioDevice initialized.
+[2017.04.25-01.13.36:008][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Seagull/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.25-01.13.36:014][  0]LogInit: Texture streaming: Enabled
+[2017.04.25-01.13.36:083][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.25-01.13.36:158][  0]LogInit: Transaction tracking system initialized
+[2017.04.25-01.13.36:437][  0]BlueprintLog: New page: Editor Load
+[2017.04.25-01.13.37:144][  0]LocalizationService: Info Localization service is disabled
+[2017.04.25-01.13.37:697][  0]LogConsoleResponse:Display: 
+[2017.04.25-01.13.37:804][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.25-01.13.37:804][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.25-01.13.38:062][  0]LogFileCache: Scanning file cache for directory 'D:/LazerPuzzle_Game/GameFiles/Content/' took 0.01s
+[2017.04.25-01.13.38:642][  0]SourceControl: Info Source control is disabled
+[2017.04.25-01.13.38:642][  0]Cmd: MAP LOAD FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.25-01.13.38:643][  0]LightingResults: New page: Lighting Build
+[2017.04.25-01.13.38:674][  0]MapCheck: New page: Map Check
+[2017.04.25-01.13.38:674][  0]LightingResults: New page: Lighting Build
+[2017.04.25-01.13.38:910][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 256X256) - 45 MB total VRAM
+[2017.04.25-01.13.38:944][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 64X64) - 45 MB total VRAM
+[2017.04.25-01.13.38:948][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 256X256) - 45 MB total VRAM
+[2017.04.25-01.13.38:951][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 64X64) - 45 MB total VRAM
+[2017.04.25-01.13.38:954][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT, 256X128) - 45 MB total VRAM
+[2017.04.25-01.13.38:957][  0]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT, 64X32) - 45 MB total VRAM
+[2017.04.25-01.13.38:959][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 128X128) - 45 MB total VRAM
+[2017.04.25-01.13.38:960][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 32X32) - 45 MB total VRAM
+[2017.04.25-01.13.39:087][  0]LogMaterial: Missing cached shader map for material Base, compiling. 
+[2017.04.25-01.13.39:088][  0]LogTemp:Display: Added material ShaderMap 0x000002379D46E400 with Material 0x00000237AF6E4B80 to ShaderMapsBeingCompiled
+[2017.04.25-01.13.39:132][  0]LogTemp:Display: Kicking off shader compilation for Base, GameThreadShaderMap 0x000002379D46E400
+[2017.04.25-01.13.39:132][  0]LogStaticMesh: Building static mesh Prism...
+[2017.04.25-01.13.39:174][  0]LogStaticMesh: Built static mesh [0.04s] /Game/Assets/SM_Prism/Prism.Prism
+[2017.04.25-01.13.39:251][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.13.39:277][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.25-01.13.39:277][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.25-01.13.39:341][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 64.096ms to complete.
+[2017.04.25-01.13.39:342][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.699
+[2017.04.25-01.13.39:552][  0]LogCollectionManager: Loaded 0 collections in 0.000868 seconds
+[2017.04.25-01.13.39:691][  0]LogFileCache: Scanning file cache for directory 'D:/LazerPuzzle_Game/GameFiles/Saved/Collections/' took 0.03s
+[2017.04.25-01.13.39:691][  0]LogFileCache: Scanning file cache for directory 'D:/LazerPuzzle_Game/GameFiles/Content/Developers/Seagull/Collections/' took 0.02s
+[2017.04.25-01.13.39:691][  0]LogFileCache: Scanning file cache for directory 'D:/LazerPuzzle_Game/GameFiles/Content/Collections/' took 0.01s
+[2017.04.25-01.13.39:691][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.25-01.13.39:701][  0]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2245 classes and 453 folders.
+[2017.04.25-01.13.39:705][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.25-01.13.39:705][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.25-01.13.39:767][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2017.04.25-01.13.40:120][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2017.04.25-01.13.40:170][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.04.25-01.13.40:325][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0011 seconds. Added 1 classes and 3 folders.
+[2017.04.25-01.13.40:356][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.25-01.13.40:365][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.25-01.13.40:432][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.04.25-01.13.40:433][  0]LogLoad: (Engine Initialization) Total time: 22.15 seconds
+[2017.04.25-01.13.40:433][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.15 seconds
+[2017.04.25-01.13.40:433][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.25-01.13.40:433][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.25-01.13.40:767][  0]LogOcInput: OculusInput pre-init called
+[2017.04.25-01.13.40:789][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.25-01.13.40:793][  0]LogSlate: Took 0.003274 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.25-01.13.40:800][  0]LogSlate: Took 0.003378 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.25-01.13.40:809][  0]LogSlate: Took 0.003915 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.25-01.13.40:992][  0]LogRenderer: Reallocating scene render targets to support 1616x816 NumSamples 1 (Frame:2).
+[2017.04.25-01.13.41:108][  1]LogAssetRegistry: Asset discovery search completed in 10.0168 seconds
+[2017.04.25-01.13.41:108][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000004 seconds (found 0 objects)
+[2017.04.25-01.13.41:108][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
+[2017.04.25-01.13.41:140][  2]LogTemp:Display: Finished compile of shader map 0x000002379D46E400
+[2017.04.25-01.13.41:140][  2]LogTemp:Display: Shader map Base complete, GameThreadShaderMap 0x000002379D46E400, marking material Base as finished
+[2017.04.25-01.13.41:140][  2]LogTemp:Display: Marking material as finished 0x00000237AF6E4B80
+[2017.04.25-01.13.51:597][233]LogSlate: Took 0.003221 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.25-01.13.52:115][233]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 112 classes and 0 folders.
+[2017.04.25-01.13.52:833][233]LogSlate: Took 0.000229 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.25-01.13.53:082][233]LogSlate: Took 0.003588 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.25-01.13.53:582][234]LogSlate: Took 0.003173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.25-01.14.23:731][646]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.14.23:798][646]LogSavePackage: Save=63.43ms
+[2017.04.25-01.14.23:798][646]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_Laser4AA167CC4562BBB293249AAF9A4BD32D.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.14.23:802][646]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.14.25:576][804]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.14.26:734][888]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.14.26:799][888]LogSavePackage: Save=62.27ms
+[2017.04.25-01.14.26:799][888]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_LaserE26697854C82EB6F3DE4398576109F64.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.14.26:800][888]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.14.32:459][421]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.14.32:474][421]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.14.32:474][421]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.14.32:505][421]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:14:32 PM)
+[2017.04.25-01.14.32:514][421]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.14.32:536][421]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021736s)
+[2017.04.25-01.14.32:536][421]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.14.32:537][421]LogPlayLevel: PIE: World Init took: (0.000931s)
+[2017.04.25-01.14.32:537][421]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.031745s)
+[2017.04.25-01.14.32:577][421]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.14.32:586][421]LogInit: FAudioDevice initialized.
+[2017.04.25-01.14.32:668][421]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.14.32:712][421]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.14.32
+[2017.04.25-01.14.32:725][421]LogWorld: Bringing up level for play took: 0.013878
+[2017.04.25-01.14.32:820][421]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2017.04.25-01.14.32:835][421]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.703
+[2017.04.25-01.14.32:841][421]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.14.33:886][421]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:0873
+[2017.04.25-01.14.33:887][421]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  LineTraceByChannel with the following  Call Stack
+[2017.04.25-01.14.33:941][421]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.14.34:039][421]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.16.30:577][733]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.16.31:299][767]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.16.31:365][767]LogSavePackage: Save=63.71ms
+[2017.04.25-01.16.31:365][767]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_Laser8660A4C44A85BD84E7AAAFAB80EB315C.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.16.31:368][767]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.16.50:495][146]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.16.51:132][173]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.16.51:198][173]LogSavePackage: Save=63.43ms
+[2017.04.25-01.16.51:198][173]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_Laser932DC84B428B67FFFB550A917D0623A1.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.16.51:201][173]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.16.58:224][646]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.16.58:832][673]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.16.58:898][673]LogSavePackage: Save=63.23ms
+[2017.04.25-01.16.58:898][673]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_LaserA3DEF95A4EAA88A5F3E64CA82ABA2B3B.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.16.58:901][673]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.17.05:009][113]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.17.05:601][137]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.17.05:668][137]LogSavePackage: Save=64.38ms
+[2017.04.25-01.17.05:668][137]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_Laser1F7188C4435CA7DF1D6E0FA490321216.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.17.05:671][137]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.17.08:982][441]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.17.09:015][441]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.17.09:015][441]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.17.09:016][441]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:17:09 PM)
+[2017.04.25-01.17.09:016][441]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.17.09:022][441]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006539s)
+[2017.04.25-01.17.09:023][441]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.17.09:023][441]LogPlayLevel: PIE: World Init took: (0.001072s)
+[2017.04.25-01.17.09:023][441]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007854s)
+[2017.04.25-01.17.09:065][441]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.17.09:073][441]LogInit: FAudioDevice initialized.
+[2017.04.25-01.17.09:102][441]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.17.09:104][441]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.17.09
+[2017.04.25-01.17.09:105][441]LogWorld: Bringing up level for play took: 0.001411
+[2017.04.25-01.17.09:106][441]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.974
+[2017.04.25-01.17.09:119][441]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.17.10:105][441]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:0888
+[2017.04.25-01.17.10:105][441]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  LineTraceByChannel with the following  Call Stack
+[2017.04.25-01.17.10:107][441]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.17.10:166][441]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.03:866][260]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.18.04:379][280]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.18.04:470][280]LogSavePackage: Save=81.85ms
+[2017.04.25-01.18.04:470][280]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_LaserBFDED3504E8636F33E11268AA6413E95.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.18.04:473][280]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.18.07:834][576]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.18.07:845][576]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.07:845][576]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.18.07:845][576]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:18:07 PM)
+[2017.04.25-01.18.07:845][576]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.18.07:850][576]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004786s)
+[2017.04.25-01.18.07:851][576]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.18.07:851][576]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2017.04.25-01.18.07:851][576]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005916s)
+[2017.04.25-01.18.07:892][576]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.18.07:901][576]LogInit: FAudioDevice initialized.
+[2017.04.25-01.18.07:934][576]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.18.07:935][576]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.18.07
+[2017.04.25-01.18.07:936][576]LogWorld: Bringing up level for play took: 0.001211
+[2017.04.25-01.18.07:936][576]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.195
+[2017.04.25-01.18.07:950][576]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.09:003][576]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:0704
+[2017.04.25-01.18.09:003][576]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  Set Continue? with the following  Call Stack
+[2017.04.25-01.18.09:005][576]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.09:061][576]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.30:407][372]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.18.30:993][396]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.18.31:059][396]LogSavePackage: Save=63.36ms
+[2017.04.25-01.18.31:059][396]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_LaserE56E94F74F81FCF78B3E548BC01399A0.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.18.31:062][396]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.18.35:999][800]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.18.36:009][800]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.36:009][800]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.18.36:010][800]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:18:36 PM)
+[2017.04.25-01.18.36:010][800]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.18.36:015][800]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004752s)
+[2017.04.25-01.18.36:015][800]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.18.36:016][800]LogPlayLevel: PIE: World Init took: (0.000853s)
+[2017.04.25-01.18.36:016][800]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005904s)
+[2017.04.25-01.18.36:057][800]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.18.36:066][800]LogInit: FAudioDevice initialized.
+[2017.04.25-01.18.36:096][800]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.18.36:098][800]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.18.36
+[2017.04.25-01.18.36:098][800]LogWorld: Bringing up level for play took: 0.001167
+[2017.04.25-01.18.36:099][800]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.033
+[2017.04.25-01.18.36:112][800]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.37:162][800]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.18.37:162][800]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  Set StartLocation with the following  Call Stack
+[2017.04.25-01.18.37:164][800]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.37:225][800]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.52:158][968]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.18.52:169][968]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.52:169][968]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.18.52:170][968]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:18:52 PM)
+[2017.04.25-01.18.52:170][968]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.18.52:175][968]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004979s)
+[2017.04.25-01.18.52:175][968]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.18.52:176][968]LogPlayLevel: PIE: World Init took: (0.000840s)
+[2017.04.25-01.18.52:176][968]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006097s)
+[2017.04.25-01.18.52:217][968]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.18.52:226][968]LogInit: FAudioDevice initialized.
+[2017.04.25-01.18.52:258][968]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.18.52:260][968]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.18.52
+[2017.04.25-01.18.52:260][968]LogWorld: Bringing up level for play took: 0.001269
+[2017.04.25-01.18.52:261][968]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.13
+[2017.04.25-01.18.52:275][968]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.18.52:276][968]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 1729
+[2017.04.25-01.18.52:276][968]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.21.01:407][968]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.21.01:407][968]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  Set StartLocation with the following  Call Stack
+[2017.04.25-01.21.01:413][968]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.21.01:480][968]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.21.10:183][482]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.21.10:196][482]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.21.10:196][482]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.21.10:196][482]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:21:10 PM)
+[2017.04.25-01.21.10:196][482]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.21.10:201][482]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005028s)
+[2017.04.25-01.21.10:202][482]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.21.10:203][482]LogPlayLevel: PIE: World Init took: (0.001110s)
+[2017.04.25-01.21.10:203][482]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006371s)
+[2017.04.25-01.21.10:245][482]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.21.10:254][482]LogInit: FAudioDevice initialized.
+[2017.04.25-01.21.10:285][482]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.21.10:287][482]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.21.10
+[2017.04.25-01.21.10:287][482]LogWorld: Bringing up level for play took: 0.001408
+[2017.04.25-01.21.10:288][482]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.157
+[2017.04.25-01.21.10:302][482]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.21.10:303][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 1729
+[2017.04.25-01.21.10:303][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.21.16:096][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.21.24:703][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 3492
+[2017.04.25-01.21.24:703][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.21.31:506][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.21.33:442][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 3492
+[2017.04.25-01.21.33:442][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.21.43:693][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.21.45:204][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 3492
+[2017.04.25-01.21.45:204][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.21.56:017][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.01:951][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 3492
+[2017.04.25-01.22.01:951][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.22.05:708][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.06:866][482]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_IfThenElse', from offset 3492
+[2017.04.25-01.22.06:866][482]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ReceiveTick
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:ExecuteUbergraph_BP_Laser
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory
+
+[2017.04.25-01.22.10:835][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.11:949][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.13:683][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.15:265][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.16:272][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.16:910][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.17:694][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.18:378][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.19:100][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.19:770][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.20:384][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.21:030][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.21:745][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.24:558][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.25:754][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.27:209][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.28:320][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.29:234][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.30:097][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.30:612][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.31:041][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.31:388][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.31:742][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.32:041][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.32:355][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.32:591][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.32:746][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.32:909][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.33:079][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.33:236][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.33:403][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.33:569][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.33:744][482]LogBlueprintDebug:Warning: Unknown breakpoint hit at node K2Node_IfThenElse in object Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.51:973][482]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:06EF
+[2017.04.25-01.22.51:973][482]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  Set StartLocation with the following  Call Stack
+[2017.04.25-01.22.51:979][482]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.22.52:040][482]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.23.01:215][334]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset" SILENT=true
+[2017.04.25-01.23.01:282][334]LogSavePackage: Save=64.59ms
+[2017.04.25-01.23.01:282][334]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_LaserF21A3FE34D2710C255AB49B17AC22D07.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset'
+[2017.04.25-01.23.01:285][334]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Content/Blueprints/BP_Laser.uasset
+[2017.04.25-01.23.17:137][503]BlueprintLog: New page: Compile BP_Laser
+[2017.04.25-01.23.33:568][602]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.23.33:580][602]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.23.33:580][602]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.23.33:580][602]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:23:33 PM)
+[2017.04.25-01.23.33:580][602]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.23.33:585][602]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004949s)
+[2017.04.25-01.23.33:586][602]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.23.33:586][602]LogPlayLevel: PIE: World Init took: (0.000991s)
+[2017.04.25-01.23.33:587][602]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006215s)
+[2017.04.25-01.23.33:634][602]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.23.33:654][602]LogInit: FAudioDevice initialized.
+[2017.04.25-01.23.33:687][602]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.23.33:689][602]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.23.33
+[2017.04.25-01.23.33:689][602]LogWorld: Bringing up level for play took: 0.001143
+[2017.04.25-01.23.33:690][602]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.442
+[2017.04.25-01.23.33:703][602]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.23.34:752][602]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:076E
+[2017.04.25-01.23.34:752][602]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  LineTraceByChannel with the following  Call Stack
+[2017.04.25-01.23.34:754][602]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.23.34:815][602]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.23.55:868][271]LogSlate: Took 0.000320 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.25-01.24.05:080][298]LogSavePackage: Save=163.03ms
+[2017.04.25-01.24.05:080][298]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/Minimal_Default_Auto11F49BB084589B049599F178EA4D0509C.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2017.04.25-01.24.05:081][298]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2017.04.25-01.24.05:085][298]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.193
+[2017.04.25-01.24.05:085][298]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.193
+[2017.04.25-01.24.05:087][298]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BP_Laser] ([1] browsable assets)...
+[2017.04.25-01.24.05:087][298]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BP_Laser]
+[2017.04.25-01.24.05:087][298]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Laser" FILE="../../../../../../LazerPuzzle_Game/GameFiles/Saved/Autosaves/Game/Blueprints/BP_Laser_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.04.25-01.24.05:160][298]LogSavePackage: Save=66.00ms
+[2017.04.25-01.24.05:160][298]LogSavePackage: Moving '../../../../../../LazerPuzzle_Game/GameFiles/Saved/BP_Laser_Auto17BBDE56340D1E5C7681849949274808F.tmp' to '../../../../../../LazerPuzzle_Game/GameFiles/Saved/Autosaves/Game/Blueprints/BP_Laser_Auto1.uasset'
+[2017.04.25-01.24.05:161][298]LogSavePackage:Display: Finished SavePackage ../../../../../../LazerPuzzle_Game/GameFiles/Saved/Autosaves/Game/Blueprints/BP_Laser_Auto1.uasset
+[2017.04.25-01.24.05:161][298]LogFileHelpers: Auto-saving content packages took 0.076
+[2017.04.25-01.25.12:484][237]LogTemp: Repeting last play command: Simulate
+[2017.04.25-01.25.12:497][237]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.25.12:497][237]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-01.25.12:497][237]PIE: New page: SIE session: Minimal_Default (Apr 24, 2017, 5:25:12 PM)
+[2017.04.25-01.25.12:497][237]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.25-01.25.12:502][237]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004533s)
+[2017.04.25-01.25.12:503][237]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.25-01.25.12:503][237]LogPlayLevel: PIE: World Init took: (0.000981s)
+[2017.04.25-01.25.12:503][237]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005762s)
+[2017.04.25-01.25.12:546][237]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-01.25.12:554][237]LogInit: FAudioDevice initialized.
+[2017.04.25-01.25.12:583][237]LogLoad: Game class is 'GameModeBase'
+[2017.04.25-01.25.12:585][237]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-21.25.12
+[2017.04.25-01.25.12:585][237]LogWorld: Bringing up level for play took: 0.001664
+[2017.04.25-01.25.12:586][237]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.455
+[2017.04.25-01.25.12:602][237]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.25.13:653][237]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_Laser_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.BP_Laser_104
+	Function /Game/Blueprints/BP_Laser.BP_Laser_C:CalculateTrajectory:076E
+[2017.04.25-01.25.13:653][237]PIE:Error: Error Infinite Loop detected in  BP_Laser , asserted during  LineTraceByChannel with the following  Call Stack
+[2017.04.25-01.25.13:655][237]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.25.13:699][237]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.25-01.25.17:678][529]Cmd: QUIT_EDITOR
+[2017.04.25-01.25.18:395][529]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.25-01.25.18:420][529]LogExit: Preparing to exit.
+[2017.04.25-01.25.18:674][529]LogDirectoryWatcher: A directory notification for 'D:/LazerPuzzle_Game/GameFiles/Content/' was aborted.
+[2017.04.25-01.25.18:709][529]LogExit: Editor shut down
+[2017.04.25-01.25.18:710][529]LogExit: Transaction tracking system shut down
+[2017.04.25-01.25.18:800][529]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.25-01.25.18:800][529]LogExit: Object subsystem successfully closed.
+[2017.04.25-01.25.18:852][529]LogD3D11RHI: Shutdown
+[2017.04.25-01.25.18:852][529]LogD3D11RHI: CleanupD3DDevice
+[2017.04.25-01.25.19:098][529]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.25-01.25.19:142][529]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (506)
+[2017.04.25-01.25.19:142][529]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.04.25-01.25.19:142][529]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.04.25-01.25.19:148][529]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2017.04.25-01.25.19:148][529]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2017.04.25-01.25.19:148][529]LogModuleManager: Shutting down and abandoning module WorldBrowser (496)
+[2017.04.25-01.25.19:148][529]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.04.25-01.25.19:148][529]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.25-01.25.19:148][529]LogDirectoryWatcher: A directory notification for 'D:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.25-01.25.19:150][529]LogDirectoryWatcher: A directory notification for 'D:/LazerPuzzle_Game/GameFiles/Content/Collections/' was aborted.
+[2017.04.25-01.25.19:150][529]LogDirectoryWatcher: A directory notification for 'D:/LazerPuzzle_Game/GameFiles/Content/Developers/Seagull/Collections/' was aborted.
+[2017.04.25-01.25.19:150][529]LogDirectoryWatcher: A directory notification for 'D:/LazerPuzzle_Game/GameFiles/Saved/Collections/' was aborted.
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.04.25-01.25.19:150][529]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.04.25-01.25.19:761][529]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.04.25-01.25.19:814][529]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.04.25-01.25.19:820][529]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.04.25-01.25.19:821][529]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.04.25-01.25.19:983][529]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.04.25-01.25.19:984][529]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.04.25-01.25.19:984][529]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.04.25-01.25.19:984][529]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.04.25-01.25.19:984][529]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.04.25-01.25.19:985][529]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.04.25-01.25.19:985][529]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.04.25-01.25.19:985][529]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.04.25-01.25.19:985][529]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.04.25-01.25.20:086][529]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.04.25-01.25.20:186][529]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.04.25-01.25.20:188][529]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.04.25-01.25.20:265][529]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.25-01.25.20:265][529]LogDirectoryWatcher: A directory notification for '../../../../../../LazerPuzzle_Game/GameFiles/Content/' was aborted.
+[2017.04.25-01.25.20:265][529]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.04.25-01.25.20:265][529]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.04.25-01.25.20:332][529]LogDerivedDataCache: Shutdown
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.25-01.25.20:332][529]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.25-01.25.20:332][529]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.25-01.25.20:332][529]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.25-01.25.20:332][529]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4D396010-4700-1134-C22D-23A98834A82D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=8b605f9c42795b9827358aadddc493db%7C3c81349b64114c04ae0be1cab1184ba2%7C49b3139a-08df-4afe-9635-ab4949690b77&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.25-01.25.20:353][529]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.25-01.25.20:354][529]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.25-01.25.20:355][529]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.25-01.25.20:355][529]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.25-01.25.20:355][529]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.25-01.25.20:355][529]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.25-01.25.20:358][529]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.25-01.25.20:360][529]LogExit: Exiting.
+[2017.04.25-01.25.20:362][529]Log file closed, 04/24/17 21:25:20
